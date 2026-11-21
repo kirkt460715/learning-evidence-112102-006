@@ -1,32 +1,85 @@
 {
   "dataset": "challenge",
+  "catalogs": {
+    "tasks": [
+      {
+        "id": "t-1",
+        "version": "v1",
+        "objective": "compare-evidence"
+      },
+      {
+        "id": "t-1",
+        "version": "v2",
+        "objective": "compare-evidence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "s-1",
+        "kind": "text-to-speech",
+        "available": true
+      },
+      {
+        "id": "s-2",
+        "kind": "worked-example",
+        "available": true
+      }
+    ]
+  },
   "records": [
     {
-      "id": "c-01",
-      "task": "interpret-chart",
+      "id": "c-1",
+      "kind": "attempt",
+      "learner": "l-1",
+      "task": "t-1",
       "version": "v1",
-      "hint_level": "none",
-      "duration_minutes": 14,
-      "help_requests": 0,
-      "access_issue": "none"
+      "step": "compare-sources",
+      "status": "completed",
+      "explanation": "distinguishes-scope"
     },
     {
-      "id": "c-02",
-      "task": "interpret-chart",
+      "id": "c-2",
+      "kind": "support-request",
+      "learner": "l-2",
+      "task": "t-1",
+      "version": "v1",
+      "step": "read-instructions",
+      "support": "text-to-speech",
+      "status": "unavailable"
+    },
+    {
+      "id": "c-3",
+      "kind": "support-request",
+      "learner": "l-3",
+      "task": "t-1",
+      "version": "v1",
+      "step": "compare-sources",
+      "support": "worked-example",
+      "status": "used"
+    },
+    {
+      "id": "c-4",
+      "kind": "teacher-observation",
+      "task": "t-1",
+      "version": "v1",
+      "step": "compare-sources",
+      "finding": "target-reasoning-observed"
+    },
+    {
+      "id": "c-5",
+      "kind": "trial-plan",
+      "task": "t-1",
       "version": "v2",
-      "hint_level": "worked-example",
-      "duration_minutes": 7,
-      "help_requests": 1,
-      "access_issue": "small-text"
+      "change": "rewrite-instructions",
+      "status": "draft"
     },
     {
-      "id": "c-03",
-      "task": "compare-explanations",
-      "version": "v1",
-      "hint_level": "prompt",
-      "duration_minutes": 21,
-      "help_requests": 3,
-      "access_issue": "none"
+      "id": "c-6",
+      "kind": "trial-plan",
+      "task": "t-1",
+      "version": "v2",
+      "change": "add-target-hint",
+      "status": "draft"
     }
   ]
 }

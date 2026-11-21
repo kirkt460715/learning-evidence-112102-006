@@ -1,5 +1,5 @@
-# 记录格式
+# 合成课程资料格式
 
-任务观察以 id、task、version、hint_level、duration_minutes、help_requests、access_issue 表示任务支持、观察时长及可及性记录。时长和求助数不代表认知投入。
+tasks 目录区分任务版本与目标，supports 目录说明可用支持类型。records 按 attempt、support-request、teacher-observation、trial-plan 表示学生经历及下一轮教学调整。
 
-记录以 UTF-8 JSON 保存，顶层包含 dataset 和 records。每条记录的 id 在文件中唯一。`fixtures/records.json` 中的例子用于说明输入字段和状态取值。
+夹具只包含虚构的课程、任务和学习事件，不含真实学生资料，也不预先给出分析结论。项目当前入口仅检查夹具格式。
