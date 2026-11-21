@@ -1,0 +1,32 @@
+{
+  "dataset": "challenge",
+  "records": [
+    {
+      "id": "c-01",
+      "task": "interpret-chart",
+      "version": "v1",
+      "hint_level": "none",
+      "duration_minutes": 14,
+      "help_requests": 0,
+      "access_issue": "none"
+    },
+    {
+      "id": "c-02",
+      "task": "interpret-chart",
+      "version": "v2",
+      "hint_level": "worked-example",
+      "duration_minutes": 7,
+      "help_requests": 1,
+      "access_issue": "small-text"
+    },
+    {
+      "id": "c-03",
+      "task": "compare-explanations",
+      "version": "v1",
+      "hint_level": "prompt",
+      "duration_minutes": 21,
+      "help_requests": 3,
+      "access_issue": "none"
+    }
+  ]
+}
