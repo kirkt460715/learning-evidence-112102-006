@@ -3,12 +3,12 @@
   "catalogs": {
     "tasks": [
       {
-        "id": "t-1",
+        "id": "t-1-v1",
         "version": "v1",
         "objective": "compare-evidence"
       },
       {
-        "id": "t-1",
+        "id": "t-1-v2",
         "version": "v2",
         "objective": "compare-evidence"
       }
